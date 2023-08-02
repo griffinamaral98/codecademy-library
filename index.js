@@ -77,6 +77,23 @@ class Movie extends Media {
   }
 }
 
+// CD subclass that inherits props and functions from Media
+class CD extends Media {
+  constructor(artist, title, songs) {
+    super(title);
+    this._artist = artist;
+    this._songs = songs;
+  }
+
+  get artist() {
+    return this._artist;
+  }
+
+  get songs() {
+    return this._songs;
+  }
+}
+
 // Create a new Book
 const historyOfEverything = new Book(
   "A Short History of Nearly Everything",
@@ -101,3 +118,23 @@ speed.addRating(1);
 speed.addRating(1);
 speed.addRating(5);
 console.log(speed.getAverageRating());
+
+const dissection = new CD("Frog Mallet", "Dissection by Amphibian", [
+  "Lord of the Pond",
+  "SANGUISUGAFROGG (ft. Sanguisugabogg)",
+  "Sludge of the Swamp",
+  "BULLFROG BEATDOWN (ft. Inferious)",
+  "The Righteous Amphibious Mallet (ft. Undeath)",
+  "Krag'wa The Huge",
+  "Proteus The Wartbringer (ft. Bodysnatcher)",
+  "I AM FROG",
+  "Chapter One: Intoaduction",
+]);
+dissection.toggleCheckedOutStatus();
+console.log(dissection.isCheckedOut);
+
+dissection.addRating(5);
+dissection.addRating(4);
+dissection.addRating(5);
+console.log(dissection.getAverageRating());
+console.log(dissection.songs);
