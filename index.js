@@ -59,3 +59,20 @@ class Book extends Media {
     return this._pages;
   }
 }
+
+// Movie subclass that inherits props and functions from Media
+class Movie extends Media {
+  constructor(title, director, runTime) {
+    super(title);
+    this._director = director;
+    this._runTime = runTime;
+  }
+
+  get director() {
+    return this._director;
+  }
+
+  get runTime() {
+    return this._runTime;
+  }
+}
