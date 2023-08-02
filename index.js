@@ -109,7 +109,7 @@ historyOfEverything.addRating(5);
 historyOfEverything.addRating(5);
 console.log(historyOfEverything.getAverageRating());
 
-//Create a new Movie
+// Create a new Movie
 const speed = new Movie("Speed", "Jan de Bont", 116);
 speed.toggleCheckedOutStatus();
 console.log(speed.isCheckedOut);
@@ -119,6 +119,7 @@ speed.addRating(1);
 speed.addRating(5);
 console.log(speed.getAverageRating());
 
+// Create a new CD
 const dissection = new CD("Frog Mallet", "Dissection by Amphibian", [
   "Lord of the Pond",
   "SANGUISUGAFROGG (ft. Sanguisugabogg)",
