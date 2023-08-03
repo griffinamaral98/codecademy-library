@@ -46,17 +46,7 @@ a {
 .header-three:hover {
   box-shadow: 0px 0px 0px 10px #e2ad8b;
   background-color: #e2ad8b;
-}
-
-.header-one::before,
-.header-two::before,
-.header-three::before {
-  display: block;
-  content: attr(title);
-  font-weight: bold;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 .header-one,

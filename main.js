@@ -13,7 +13,19 @@ console.log(historyOfEverything.isCheckedOut);
 historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);
 historyOfEverything.addRating(5);
-console.log(historyOfEverything.getAverageRating());
+// console.log(historyOfEverything.getAverageRating());
+
+const title = document.querySelector(".title");
+title.innerHTML = historyOfEverything.title;
+
+const author = document.querySelector(".author");
+author.innerHTML = historyOfEverything.author;
+
+const pages = document.querySelector(".pages");
+pages.innerHTML = `Pages: ${historyOfEverything.pages}`;
+
+const rating = document.querySelector(".rating");
+rating.innerHTML = `Average User Rating: ${historyOfEverything.getAverageRating()}`;
 
 // Create a new Movie
 const speed = new Movie("Speed", "Jan de Bont", 116);

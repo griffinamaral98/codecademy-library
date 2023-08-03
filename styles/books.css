@@ -1,0 +1,21 @@
+.information {
+  margin: auto 0 auto 0;
+  width: 50%;
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+  align-items: center;
+}
+
+.links > img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 8px;
+}
+
+.item {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

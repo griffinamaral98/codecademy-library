@@ -24,12 +24,13 @@ export class Media {
   }
 
   getAverageRating() {
+    let rating = document.querySelector(".rating");
     let ratingSum = this._ratings.reduce(
       (currentSum, rating) => currentSum + rating,
       0
     );
     let average = Math.round(ratingSum / this._ratings.length);
-    console.log(average);
+    return average;
   }
 
   addRating(rating) {
