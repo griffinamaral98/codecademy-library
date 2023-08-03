@@ -5,11 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codecademy Library</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./main.js" type="module" defer></script>
   </head>
   <body>
-    <h2>Library Contents</h2>
-    <a href="pages/books.html">Books</a>
-    <a href="pages/movies.html">Movies</a>
-    <a href="pages/CDs.html">CDs</a>
+    <nav>
+      <div class="nav-container">
+        <div class="nav">
+          <h1 class="logo">Codecademy Library</h1>
+          <div class="header-one"><a href="pages/books.html">Books</a></div>
+          <div class="header-two"><a href="pages/movies.html">Movies</a></div>
+          <div class="header-three"><a href="pages/CDs.html">CDs</a></div>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="info-title">
+        <h2>Library Contents</h2>
+      </div>
+      <div class="information">
+        <article class="item">
+          <a href="pages/books.html" class="links">
+            <img src="images/history.jpg" alt="" />
+            <div class="subtext">
+              <h3>Books</h3>
+            </div>
+          </a>
+        </article>
+
+        <article class="item">
+          <a href="pages/movies.html" class="links">
+            <img src="images/speed.jpg" alt="" />
+            <div class="subtext">
+              <h3>Movies</h3>
+            </div>
+          </a>
+        </article>
+
+        <article class="item">
+          <a href="pages/CDs.html" class="links">
+            <img src="images/dissection.jpg" alt="" />
+            <div class="subtext">
+              <h3>CDs</h3>
+            </div>
+          </a>
+        </article>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <p>Griffin Amaral</p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
