@@ -1,5 +1,3 @@
-import { CD, Movie, Book } from "./index.js";
-
 export class Media {
   constructor(title) {
     this._title = title;
@@ -24,7 +22,6 @@ export class Media {
   }
 
   getAverageRating() {
-    let rating = document.querySelector(".rating");
     let ratingSum = this._ratings.reduce(
       (currentSum, rating) => currentSum + rating,
       0
