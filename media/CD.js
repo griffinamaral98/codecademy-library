@@ -1,4 +1,4 @@
-import { Media } from "./media.js";
+import { Media } from "./index.js";
 
 export class CD extends Media {
   constructor(artist, title, songs) {

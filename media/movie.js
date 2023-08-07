@@ -1,4 +1,4 @@
-import { Media } from "./media.js";
+import { Media } from "./index.js";
 
 export class Movie extends Media {
   constructor(title, director, runTime) {
